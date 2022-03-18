@@ -1,0 +1,100 @@
+/* ------CUSTOM PROPERTIES------ */
+:root {
+  --first-color: #d90062;
+  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --second-color: #14192d;
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: #501464;
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --link-color: #509ee3;
+  --title-color: #333;
+  --text-color: #222;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --font: 'Roboto Mono', monospace;
+  --max-width: 1200px;
+  --header-height: 6rem;
+}
+
+/* ------------RESET----------- */
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--text-color);
+    background-image: url("../src/assets/fondo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#root {
+    background-color: var(--black-alpha-color);
+    height: 100vh;
+}
+
+/* ---------COMPONENTS--------- */
+/* Header */
+header {
+    height: 100vh;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title */
+.gradient-title {
+    letter-spacing: 2px;
+    background: #444444;
+    background: -webkit-linear-gradient(to bottom, #888888 43%, #FF3D0D 71%, #F5B70C 74%);
+    background: -moz-linear-gradient(to bottom, #888888 43%, #FF3D0D 71%, #F5B70C 74%);
+    background: linear-gradient(to bottom, #888888 43%, #FF3D0D 71%, #F5B70C 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.sub-title {
+    color: #fff;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 260px;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    background: #444444;
+    background: -webkit-linear-gradient(to bottom, #888888 43%, #FF3D0D 71%, #F5B70C 74%);
+    background: -moz-linear-gradient(to bottom, #888888 43%, #FF3D0D 71%, #F5B70C 74%);
+    background: linear-gradient(to bottom, #888888 43%, #FF3D0D 71%, #F5B70C 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
